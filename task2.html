@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 500px;
+            width: 600px;
+            position: relative;
+            /* background-color: red; */
+        }
+        .dot1{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            animation-name: dot;
+            animation-iteration-count: 3;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            
+        }
+        .dot2{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(233, 7, 7);
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            animation-name: dot;
+            animation-iteration-count: 3;
+            animation-duration: 2.1s;
+            animation-fill-mode: forwards;
+        }
+        .dot3{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(206, 112, 24);
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            animation-name: dot;
+            animation-iteration-count: 3;
+            animation-duration: 2.2s;
+            animation-fill-mode: forwards;
+        }
+        .dot4{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(10, 135, 5);
+            position: absolute;
+            top: 30%;
+            left: 60%;
+            animation-name: dot;
+            animation-iteration-count: 3;
+            animation-duration: 2.3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes dot {
+            from{transform: translateY(100px)}
+            to{transform: translateY(50px); }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+        <div class="dot4"></div>
+    </div>
+</body>
+</html>
